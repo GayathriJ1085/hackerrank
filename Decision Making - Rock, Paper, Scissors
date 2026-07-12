@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        String play = sc.nextLine();
+      
+        if (play.equals("rock"))
+        {
+            System.out.print("Paper");
+        }
+        else if ( play.equals("scissors")){
+            System.out.print("Rock");
+        }
+        else if (play.equals("paper")){
+            System.out.print("Scissors");
+        }
+        
+    }
+}
