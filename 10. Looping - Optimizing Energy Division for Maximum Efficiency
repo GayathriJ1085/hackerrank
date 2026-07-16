@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int a = sc.nextInt();
+        
+        if (a==2){
+            System.out.print(1);
+            return;
+        }
+       if (a==3){
+            System.out.print(2);
+            return;
+        }
+        int p =1;
+        
+        while (a > 4){
+            p = p * 3;
+            a = a-3;
+        }
+        p = p * a;
+        
+        System.out.print(p);
+    }
+}
